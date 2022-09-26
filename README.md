@@ -1,2 +1,2 @@
-# ingle-price-grid-component-
+# single-price-grid-component-
 building a price grid card
