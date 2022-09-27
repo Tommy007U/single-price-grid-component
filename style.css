@@ -13,9 +13,8 @@ html{
   *, *:before, *:after{
      box-sizing: inherit;
   }
-  
-  @media (min-width:576px){ 
 
+  @media (min-width:576px){ 
 
   #card{
     width:1000px;
@@ -111,7 +110,9 @@ html{
     font-size: 0.9rem;
     opacity: 0.8;
   }
+
   .attribution{
     padding:13px;
   }
 }
+
