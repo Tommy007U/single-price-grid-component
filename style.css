@@ -14,11 +14,10 @@ html{
      box-sizing: inherit;
   }
 
-  @media (min-width:576px){ 
+   
 
   #card{
-    width:1000px;
-    height:450px;
+    
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 35);
     border-radius: 5px;
     overflow:hidden;
@@ -37,7 +36,8 @@ html{
   }
   #bottom-left-section{
     display:inline-block;
-    width:50%;
+    /* width:50%;  initially i set this value just to see how it will look */
+     width: 100%;
     height:100%;
     vertical-align: top;
     background-color: #2ab2af;
@@ -46,7 +46,10 @@ html{
   }
   #bottom-right-section{
     display:inline-block;
-    width:50%;
+
+    /*width:50%;   initially i set this value just to see how it will look */
+
+    width:100%;
     height:100%;
     background-color: #2ebfbd;
     vertical-align: top;
@@ -114,5 +117,29 @@ html{
   .attribution{
     padding:13px;
   }
-}
+ 
+ /* this is the perspective view of desktop responsive design which make things easy but 
+ the rules advice to go for mobile point of view on responsive design and it will go below
+  this commented code
+  @media (max-width:992px){
+  #card, #bottom-left-section, #bottom-right-section{
+    width:100%;
+    height: auto;
+    width: auto;
+  } 
 
+} */
+  
+ /* below is mobile responsive design first approach */
+
+ @media (min-width:576px){
+/*  here i m targeting the #card id bcoz some element(width & height) were given defaulp value that wont permit the 
+ response when the screen reduce the size */
+      #card{ 
+       width:992px;
+       height:450px;
+      }
+    #bottom-left-section, #bottom-right-section{
+      width:50%;
+    }
+ }
