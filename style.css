@@ -136,7 +136,7 @@ html{
 /*  here i m targeting the #card id bcoz some element(width & height) were given defaulp value that wont permit the 
  response when the screen reduce the size */
       #card{ 
-       width:992px;
+       width:1000px;
        height:450px;
       }
     #bottom-left-section, #bottom-right-section{
